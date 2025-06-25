@@ -38,6 +38,29 @@ python3 shadowlink.py
 ```
 
 
+### Install via PyPI (Recommended)
+
+If you prefer to install and use ShadowLink globally:
+
+```bash
+pip3 install shadowlink
+```
+
+Then run it from anywhere in your terminal:
+
+```bash
+shadowlink
+```
+
+Or using the Python module syntax:
+
+```bash
+python -m shadowlink
+```
+
+> 💡 This is the easiest way to use ShadowLink if you don’t want to clone the repository manually.
+
+
 ## Usage
 
 Simply follow the on-screen prompts:
@@ -74,6 +97,7 @@ ShadowLink will then generate **multiple masked URLs** using various shortening 
 
 - **HErl**
 - [https://github.com/petherl](https://github.com/petherl)
+- [petherl@protonmail.com](mailto:petherl@protonmail.com)
 
 
 ## License

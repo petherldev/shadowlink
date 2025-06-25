@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shadowlink"
+version = "0.0.1"  # Keep in sync with shadowlink/__init__.py
+description = "Ultimate URL Cloaking Tool — mask URLs behind trusted domains"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "HErl", email = "petherl@protonmail.com" }
+]
+license = { text = "MIT" }
+keywords = ["url-shortener", "cloaking", "security", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "pyshorteners==1.0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+shadowlink = "shadowlink.shadowlink:main"

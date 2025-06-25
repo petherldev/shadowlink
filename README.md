@@ -77,7 +77,7 @@ ShadowLink will then generate **multiple masked URLs** using various shortening 
 
 ## Requirements
 
-- Python 3.6+
+- Python 3.10+
 - Linux or WSL terminal
 - Internet connection (for link shortening)
 

@@ -23,7 +23,7 @@ We **recommend using a Python virtual environment (venv)** to isolate dependenci
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/petherl/shadowlink.git
+git clone https://github.com/petherldev/shadowlink.git
 cd shadowlink
 
 # 2. Create and activate a virtual environment
@@ -96,7 +96,7 @@ ShadowLink will then generate **multiple masked URLs** using various shortening 
 ## Author
 
 - **HErl**
-- [https://github.com/petherl](https://github.com/petherl)
+- [https://github.com/petherldev](https://github.com/petherldev)
 - [petherl@protonmail.com](mailto:petherl@protonmail.com)
 
 

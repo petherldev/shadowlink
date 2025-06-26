@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # ShadowLink
-# Author: HErl (https://github.com/petherl/shadowlink.git)
+# Author: HErl (https://github.com/petherldev/shadowlink.git)
 # License: MIT
 
 
@@ -32,7 +32,7 @@ RST = "\033[0m"
 # Project metadata – pulled from the package root
 from .version import __version__ as VERSION  # noqa: E402  (after imports)
 AUTHOR = "HErl"
-GITHUB = "https://github.com/petherl"
+GITHUB = "https://github.com/petherldev/shadowlink"     # add org repo link
 
 # ╭─ Banner – rendered once per run ───────────────────────────────────────╮
 BANNER = r"""

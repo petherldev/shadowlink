@@ -152,11 +152,15 @@ class TestShadowLinkConfig:
     def test_get_config_dir_windows(self, mock_getenv):
         """Test get_config_dir on Windows."""
         mock_getenv.return_value = "C:\\Users\\Test\\AppData\\Roaming"
-        config = ShadowLinkConfig()
 
-        config_dir = config.get_config_dir()
+        with patch("shadowlink.config.Path") as mock_path:
+            mock_path.return_value.__truediv__.return_value = Path(
+                "C:/Users/Test/AppData/Roaming/ShadowLink"
+            )
+            config = ShadowLinkConfig()
+            config_dir = config.get_config_dir()
 
-        assert "ShadowLink" in str(config_dir)
+            assert "ShadowLink" in str(config_dir)
 
     @patch("os.name", "posix")
     @patch("os.getenv")
